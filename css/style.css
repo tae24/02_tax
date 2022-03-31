@@ -1,0 +1,642 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.header,
+.background__color,
+.footer {
+  background: #C4CCEB;
+}
+
+.header__wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+.header__title {
+  font-size: 20px;
+}
+
+.header__title::before {
+  display: inline-block;
+  width: 5.16rem;
+  height: auto;
+  content: url(..//images/piggybank.png);
+  background-size: contain;
+  /* 背景画像サイズ指定 */
+  background-repeat: no-repeat;
+  /* 背景画像リピート指定 */
+  background-position: center;
+  /* 背景画像位置指定 */
+  vertical-align: middle;
+  /* 上下中央揃え */
+  margin-right: 1rem;
+}
+
+.footer__wrapper {
+  width: 90%;
+  height: 15.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    height: 19.8rem;
+    position: relative;
+  }
+}
+
+.footer__area {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__area {
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding-top: 0;
+  }
+}
+
+.footer__text {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__text {
+    font-size: 1.2rem;
+  }
+}
+
+.footer__textTop {
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__textTop {
+    padding-right: 2.5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.19rem 7.91rem 2.13rem 7.9rem;
+  background: #ffffff;
+  border-radius: 5.1rem;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 0.4rem 0.5rem 0px 0 #000000;
+}
+
+@media screen and (max-width: 320px) {
+  .btn {
+    padding: 1.19rem 4rem 1.13rem 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 2.09rem 7.38rem 2.19rem 8.9rem;
+  }
+}
+
+.card__imgBox {
+  width: 95%;
+}
+
+@media screen and (min-width: 768px) {
+  .card__imgBox {
+    max-width: 32.4rem;
+  }
+}
+
+.card__img {
+  margin-bottom: 3.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__img {
+    margin-bottom: 10.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__list {
+    max-width: 34rem;
+  }
+}
+
+.card__name {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 375px) {
+  .card__name {
+    font-size: calc(30px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__name {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__name {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.card__text {
+  font-size: 1.6rem;
+  line-height: 1.6875;
+  width: 100%;
+}
+
+.card__link {
+  font-size: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card__link {
+    padding-bottom: 1.7rem;
+  }
+}
+
+body {
+  font-family: 'Montserrat',  sans-serif, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: #000000;
+}
+
+.font_t {
+  font-family: 'TsukuARdGothic-Regular','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+/* 小文字を大文字に変換 */
+.font__up {
+  text-transform: uppercase;
+}
+
+/* 頭文字だけ大文字に変換 */
+.font__cap {
+  text-transform: capitalize;
+}
+
+.font__bold {
+  font-weight: bold;
+}
+
+.font__lighter {
+  font-weight: lighter;
+}
+
+.book__wrapper {
+  padding-top: 12.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .book__wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.book__title {
+  font-size: 2.3rem;
+  text-align: center;
+  position: relative;
+}
+
+@media (min-width: 375px) {
+  .book__title {
+    font-size: calc(23px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .book__title {
+    font-size: 80px;
+  }
+}
+
+.book__title::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 2.6rem;
+  background-color: #ffffff;
+  position: absolute;
+  top: 5px;
+  left: 10%;
+  transform: rotate(-30deg);
+}
+
+@media screen and (min-width: 768px) {
+  .book__title::before {
+    width: 1rem;
+    height: 7.5rem;
+    top: 10px;
+    left: 7%;
+    border-radius: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .book__title::before {
+    height: 9.5rem;
+  }
+}
+
+.book__title:after {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 2.6rem;
+  background-color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 10%;
+  transform: rotate(30deg);
+}
+
+@media screen and (min-width: 768px) {
+  .book__title:after {
+    width: 1rem;
+    height: 7.5rem;
+    top: 10px;
+    right: 7%;
+    border-radius: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .book__title:after {
+    height: 9.5rem;
+  }
+}
+
+.book__img {
+  padding-top: 4.463rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .book__img {
+    max-width: 33rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .book__column {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10.62rem;
+  }
+}
+
+.book__item {
+  padding-top: 7.052rem;
+}
+
+@media screen and (min-width: 768px) {
+  .book__item {
+    padding-top: 4rem;
+  }
+}
+
+.book__text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding-bottom: 2.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .book__text {
+    width: 80%;
+  }
+}
+
+.book__btn {
+  text-align: center;
+  padding: 8rem 0 10.433rem 0;
+}
+
+.feature__wrapper {
+  margin: 0 auto;
+  padding-top: 8.84rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature__wrapper::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 8px solid;
+  border-color: transparent transparent #000000 #000000;
+  transform: rotate(-45deg);
+  border-radius: 0.8rem;
+  margin-top: 8.544rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__wrapper::after {
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-top: 5.134rem;
+  }
+}
+
+.feature__title {
+  font-size: 2.6rem;
+  background-color: #ffffff;
+  margin-bottom: 0.9rem;
+  padding: 1.6rem 1.8rem 1.7rem 1.2rem;
+}
+
+@media (min-width: 375px) {
+  .feature__title {
+    font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__title {
+    margin-bottom: 2.6rem;
+    padding: 5rem 4.2rem 5rem 3.5rem;
+  }
+}
+
+.feature__titleBttom {
+  font-size: 2.6rem;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding: 1.6rem 2rem 1.6rem 1.5rem;
+  text-align: left;
+}
+
+@media (min-width: 375px) {
+  .feature__titleBttom {
+    font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__titleBttom {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__titleBttom {
+    padding: 5.3rem 5.5rem 4.7rem 4.7rem;
+  }
+}
+
+.scoring__wrapper {
+  margin-top: 10.922rem;
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__wrapper {
+    margin-top: 14.7rem;
+  }
+}
+
+.scoring__title {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 4.064rem;
+}
+
+@media (min-width: 375px) {
+  .scoring__title {
+    font-size: calc(19px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .scoring__title {
+    font-size: 50px;
+  }
+}
+
+.scoring__title::before {
+  content: url(..//images/wad_of_bills.png);
+  width: 2.701rem;
+  background-size: contain;
+  /* 背景画像サイズ指定 */
+  background-repeat: no-repeat;
+  /* 背景画像リピート指定 */
+  background-position: center;
+  /* 背景画像位置指定 */
+  vertical-align: middle;
+  /* 上下中央揃え */
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__title::before {
+    width: 6.762rem;
+  }
+}
+
+.scoring__title::after {
+  content: url(..//images/wad_of_bills.png);
+  width: 2.701rem;
+  background-size: contain;
+  /* 背景画像サイズ指定 */
+  background-repeat: no-repeat;
+  /* 背景画像リピート指定 */
+  background-position: center;
+  /* 背景画像位置指定 */
+  vertical-align: middle;
+  /* 上下中央揃え */
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__title::after {
+    width: 6.762rem;
+  }
+}
+
+.scoring__container {
+  border: 8px solid #ffffff;
+  border-radius: 4.3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__container {
+    width: 80%;
+  }
+}
+
+.scoring__pseudoElement {
+  position: relative;
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+
+.scoring__pseudoElement::after {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 1.8rem;
+  content: '';
+  background-image: -webkit-repeating-linear-gradient(135deg, #707070, #707070 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, #707070, #707070 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  backface-visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__pseudoElement::after {
+    left: 27%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__pseudoElement {
+    padding-top: 9.7rem;
+  }
+}
+
+.scoring__points {
+  font-size: 8rem;
+}
+
+@media (min-width: 375px) {
+  .scoring__points {
+    font-size: calc(80px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .scoring__points {
+    font-size: 160px;
+  }
+}
+
+.scoring__pointsSab {
+  font-size: 5rem;
+}
+
+@media (min-width: 375px) {
+  .scoring__pointsSab {
+    font-size: calc(50px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .scoring__pointsSab {
+    font-size: 100px;
+  }
+}
+
+.scoring__text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  width: 65%;
+  margin: 0 auto;
+  padding: 7.05rem 0 6.8rem 0;
+}
+
+@media (min-width: 375px) {
+  .scoring__text {
+    font-size: calc(18px + ((1vw - 3.75px)*2.4242424));
+  }
+}
+
+@media (min-width: 1200px) {
+  .scoring__text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scoring__text {
+    padding: 5.25rem 0 8.9rem 0;
+  }
+}
+
+.introduction__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 12.4rem;
+  padding-bottom: 3.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .introduction__group {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.introduction__img {
+  margin: 0 auto;
+}
+
+.introduction__list {
+  padding-top: 3.9rem;
+  padding-bottom: 14.1rem;
+}
+
+.introduction__text {
+  padding-bottom: 2rem;
+}
+
+.introduction__item {
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */

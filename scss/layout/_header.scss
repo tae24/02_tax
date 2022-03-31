@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.header{
+  &__wrapper{
+    width: 100%;
+    text-align: center;
+    padding-top: 2.4rem;
+  }
+  &__title{
+    font-size: 20px;
+    &::before{
+      display:  inline-block;
+      width: 5.16rem;
+      height: auto;
+      content: url(..//images/piggybank.png);
+      background-size:  contain;              /* 背景画像サイズ指定 */
+      background-repeat:  no-repeat;          /* 背景画像リピート指定 */
+      background-position:  center;           /* 背景画像位置指定 */
+      vertical-align:  middle;               /* 上下中央揃え */
+      margin-right:  1rem;
+    }
+  }
+}
+
+
+
+
+
+

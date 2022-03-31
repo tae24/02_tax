@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.scoring{
+  &__wrapper{
+    margin-top: 10.922rem;
+    @include mq(md){
+      margin-top: 14.7rem;
+    }
+  }
+  &__title{
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 4.064rem;
+    @media (min-width: 375px){
+      font-size: calc(19px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 50px; 
+            //最大値
+    }
+    &::before{
+      content: url(..//images/wad_of_bills.png);
+      width: 2.701rem;
+      background-size:  contain;              /* 背景画像サイズ指定 */
+      background-repeat:  no-repeat;          /* 背景画像リピート指定 */
+      background-position:  center;           /* 背景画像位置指定 */
+      vertical-align:  middle;               /* 上下中央揃え */
+      margin-right:  2rem;
+      @include mq(md){
+        width: 6.762rem;
+      }
+    }
+    &::after{
+      content: url(..//images/wad_of_bills.png);
+      width: 2.701rem;
+      background-size:  contain;              /* 背景画像サイズ指定 */
+      background-repeat:  no-repeat;          /* 背景画像リピート指定 */
+      background-position:  center;           /* 背景画像位置指定 */
+      vertical-align:  middle;               /* 上下中央揃え */
+      margin-left:  2rem;
+      @include mq(md){
+        width: 6.762rem;
+      }
+    }
+  }
+  &__container{
+    border: 8px solid $bg_colorSub;
+    border-radius: 4.3rem;
+    width: 90%;
+    margin: 0 auto;
+    @include mq(md){
+      width: 80%;
+    }
+  }
+  &__pseudoElement{
+    position: relative;
+    padding: 3.5rem 1rem;
+    text-align: center;
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      width: 70%;
+      height: 1.8rem;
+      content: '';
+      background-image: -webkit-repeating-linear-gradient(135deg, $pseudoElement_color, $pseudoElement_color 1px, transparent 2px, transparent 5px);
+      background-image: repeating-linear-gradient(-45deg, $pseudoElement_color, $pseudoElement_color 1px, transparent 2px, transparent 5px);
+      background-size: 7px 7px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      @include mq(md){
+        left: 27%;
+        width: 50%;
+      }
+    }
+    @include mq(md){
+      padding-top: 9.7rem;
+    }
+    
+  }
+  &__points{
+    font-size: 8rem;
+    @media (min-width: 375px){
+      font-size: calc(80px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 160px; 
+            //最大値
+    }
+  }
+  &__pointsSab{
+    font-size: 5rem;
+    @media (min-width: 375px){
+      font-size: calc(50px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 100px; 
+            //最大値
+    }
+  }
+  &__text{
+    font-size: 1.8rem;
+    line-height: 1.7;
+    width: 65%;
+    margin: 0 auto;
+    padding: 7.05rem 0 6.8rem 0;
+    @media (min-width: 375px){
+      font-size: calc(18px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 30px; 
+            //最大値
+    }
+    @include mq(md){
+      padding: 5.25rem 0 8.9rem 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.introduction{
+  &__wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 12.4rem;
+    padding-bottom: 3.4rem;
+  }
+  &__group{
+    @include mq(md){
+      display: flex;
+      justify-content:space-around;
+    }
+  }
+  &__img{
+    margin: 0 auto;
+  }
+  &__list{
+    padding-top: 3.9rem;
+    padding-bottom: 14.1rem;
+  }
+  &__text{
+    padding-bottom: 2rem;
+  }
+  &__item{
+    color: $font_colorBody;
+  }
+}

@@ -1,0 +1,102 @@
+@charset "utf-8"; 
+
+
+.book{
+  &__wrapper{
+    padding-top: 12.5rem;
+    @include mq(md){
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  &__title{
+    font-size: 2.3rem;
+    text-align: center;
+    position: relative;
+    @media (min-width: 375px){
+      font-size: calc(23px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 80px; 
+            //最大値
+    }
+    &::before{
+      content:"";
+      display:inline-block;
+      width:0.4rem;
+      height:2.6rem;
+      background-color:$bg_colorSub;
+      position:absolute;
+      top:5px;
+      left:10%;
+      transform: rotate(-30deg);
+      @include mq(md){
+        width: 1rem;
+        height: 7.5rem;
+        top: 10px;
+        left: 7%;
+        border-radius: 1.3rem;
+      }
+      @include mq(lg){
+        height: 9.5rem;
+      }
+    }
+    &:after{
+    content:"";
+    display:inline-block;
+    width:0.4rem;
+    height:2.6rem;
+    background-color:$bg_colorSub;
+    position:absolute;
+    top:5px;
+    right:10%;
+    transform: rotate(30deg);
+    @include mq(md){
+      width: 1rem;
+      height: 7.5rem;
+      top: 10px;
+      right: 7%;
+      border-radius: 1.3rem;
+    }
+    @include mq(lg){
+      height: 9.5rem;
+    }
+    }
+  }
+  &__img{
+    padding-top: 4.463rem;
+    margin: 0 auto;
+    @include mq(md){
+      max-width: 33rem;
+      margin: 0 auto;
+    }
+  }
+  &__column{
+    @include mq(md){
+      display: flex;
+      width: 85%;
+      margin: 0 auto;
+      padding-top: 10.62rem;
+    }
+  }
+  &__item{
+    padding-top: 7.052rem;
+    @include mq(md){
+      padding-top: 4rem;
+    }
+  }
+  &__text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-bottom: 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+    @include mq(md){
+      width: 80%;
+    }
+  }
+  &__btn{
+    text-align: center;
+    padding: 8rem 0 10.433rem 0;
+  }
+}

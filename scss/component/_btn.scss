@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+.btn{
+  display: inline-block;
+  // インラインブロックにする
+  padding: 1.19rem 7.91rem 2.13rem 7.9rem;
+  background: $bg_colorSub;
+  // background: red;
+  border-radius: 5.1rem;
+  // 角丸く
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  // 文字の間隔
+  color: $font_colorBody;
+  cursor: pointer;
+  box-shadow: 0.4rem 0.5rem 0px 0 $bg_colorShadow;
+  @include mq(sm){
+    padding: 1.19rem 4rem 1.13rem 4rem;
+  }
+  @include mq(md){
+    padding: 2.09rem 7.38rem 2.19rem 8.9rem;
+  }
+}
+

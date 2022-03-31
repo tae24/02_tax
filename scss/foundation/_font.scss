@@ -1,0 +1,78 @@
+@charset "utf-8"; 
+
+
+
+body{
+  font-family: 'Montserrat',  sans-serif, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  color: $font_colorBody;
+}
+
+.font_t{
+  font-family: 'TsukuARdGothic-Regular','ＭＳ ゴシック','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+/* 小文字を大文字に変換 */
+.font__up{
+  text-transform: uppercase;
+}
+/* 頭文字だけ大文字に変換 */
+.font__cap{
+  text-transform: capitalize;
+}
+
+.font__bold{
+  font-weight: bold;
+}
+
+.font__lighter{
+  font-weight: lighter;
+}
+
+
+// 横幅375～1199pxの環境だと
+// @media (min-width: 375px){
+//   .header__title{
+//     font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+//   }
+// }
+
+// 横幅1200px以上の環境だと
+// @media (min-width: 1200px) {
+//   .header__title{
+//     font-size: 80px; 
+//     //最大値
+//   }
+// }
+
+
+//   @media (min-width: 375px) {
+//       font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+//     }
+
+// @media (min-width: 640px) {
+//   div{
+//     font-size: calc(16px + ((1vw - 6.4px)*3.571));
+//   }
+// }
+// font-size: calc(X + ((1vw – Y)*Z));
+// X ここには文字サイズに指定したい最小値を入れます。今回は16pxですね。
+// Y 最小値を適用したい横幅の1%です。今回は640px未満の環境から文字サイズを固定したいので、100/640=6.4pxです。
+// こうすることで1vw-6.4px=0となり、先程のXに入れた値が文字サイズの最小値となります。
+// Z （最大値を適用したい横幅の1% – 最小値を適用したい横幅の1%）× ◯ = 文字サイズの最大値と最小値の差
+// （12 – 6.4）× ◯ = 20   20 / 5.6 = 3.571428…   
+// こうなるので、適当に丸めて、Zに入れる値は3.571になります。
+
+
+//   @media (min-width: 1200px) {
+//       font-size: ($value); //最大値
+//   }
+
+
+// @mixin font_sizeSm($value) {
+//   font-size: $value;
+//   //最小値
+// }
+
+// @include font_sizeSm (){
+// }
+

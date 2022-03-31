@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.feature{
+  &__wrapper{
+    margin: 0 auto;
+    padding-top: 8.84rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &::after{
+      content: "";
+      width: 1.4rem;
+      height: 1.4rem;
+      border: 8px solid;
+      border-color:  transparent transparent $font_colorBody $font_colorBody;
+      transform: rotate(-45deg);
+      border-radius: 0.8rem;
+      // xdでは３px
+      margin-top: 8.544rem;
+      @include mq(md){
+        width: 3.3rem;
+        height: 3.3rem;
+        margin-top: 5.134rem;
+      }
+    }
+  }
+  &__title{
+    font-size: 2.6rem;
+    background-color: $bg_colorSub;
+    margin-bottom: 0.9rem;
+    padding: 1.6rem 1.8rem 1.7rem 1.2rem;
+    // width: 26.3rem;
+    @media (min-width: 375px){
+      font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 80px; 
+            //最大値
+    }
+    @include mq(md){
+      margin-bottom: 2.6rem;
+      padding: 5rem 4.2rem 5rem 3.5rem;
+    }
+  }
+  &__titleBttom{
+    font-size: 2.6rem;
+    background-color: $bg_colorSub;
+    margin-bottom: 2rem;
+    display: inline-block;
+    // max-width: 13.9rem;
+    padding: 1.6rem 2rem 1.6rem 1.5rem;
+    text-align: left;
+    @media (min-width: 375px){
+      font-size: calc(26px + ((1vw - 3.75px)*2.4242424));
+    }
+    @media (min-width: 1200px) {
+            font-size: 80px; 
+            //最大値
+    }
+    @include mq(md){
+      padding: 5.3rem 5.5rem 4.7rem 4.7rem;
+    }
+  }
+}

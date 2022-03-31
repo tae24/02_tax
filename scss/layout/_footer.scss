@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.footer{
+  &__wrapper{
+    width: 90%;
+    height: 15.5rem;
+    margin: 0 auto;
+    @include mq(md){
+      height: 19.8rem;
+      position: relative;
+    }
+  }
+  &__area{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    text-align: center;
+    @include mq(md){
+      justify-content:center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      padding-top: 0;
+    }
+  }
+  &__text{
+    font-size: 1.6rem;
+    @include mq(sm){
+      font-size: 1.2rem;
+    }
+  }
+  &__textTop{
+    padding-right: 1rem;
+    @include mq(md){
+      padding-right: 2.5rem;
+    }
+  }
+}
+
